@@ -154,6 +154,11 @@ public class Mail.Application : Gtk.Application {
                 main_window.maximize ();
             }
 
+            settings.bind ("window-width", main_window, "default-width", SettingsBindFlags.DEFAULT);
+            settings.bind ("window-height", main_window, "default-height", SettingsBindFlags.DEFAULT);
+
+            settings.bind ("window-maximized", main_window, "is-maximized", SettingsBindFlags.SET);
+
             main_window.show_all ();
         }
 

@@ -295,9 +295,9 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
             configure_id = 0;
 
             if (is_maximized) {
-                Mail.Application.settings.set_boolean ("window-maximized", true);
+                // Mail.Application.settings.set_boolean ("window-maximized", true);
             } else {
-                Mail.Application.settings.set_boolean ("window-maximized", false);
+                // Mail.Application.settings.set_boolean ("window-maximized", false);
 
                 Gdk.Rectangle rect;
                 get_allocation (out rect);
